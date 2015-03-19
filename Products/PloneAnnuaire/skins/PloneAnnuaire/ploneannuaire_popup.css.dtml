@@ -1,0 +1,46 @@
+/*
+** PloneAnnuaire CSS
+*/
+
+/* <dtml-with base_properties> */
+
+.annuairePopupPosition {
+    position: relative;
+    z-index: 1;
+}
+
+#annuaire-contact-popup {
+    display: block;
+    position: absolute;
+    font-size: 10px;
+    top: 30px;
+    left: -40px;
+    border: 1px solid &dtml-globalBorderColor;;
+    background: &dtml-evenRowBackgroundColor;;
+    width: 300px;
+    padding: 0.5em;
+    z-index: 1000;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#annuaire-contact-popup h6 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px;
+}
+
+#annuaire-contact-popup p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px;
+}
+
+.highlightedAnnuaireTerm {
+    border-bottom: 2px dotted &dtml-globalFontColor;;
+    background: &dtml-evenRowBackgroundColor;;
+    cursor: help;
+    z-index: 2;
+}
+
+/* </dtml-with> */

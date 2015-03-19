@@ -1,0 +1,73 @@
+/*
+** PloneAnnuaire CSS
+*/
+
+/* <dtml-with base_properties> */
+#annuaire,
+#annuaire-contact{
+    width:60%;
+}
+.annuaireAbcedaire,
+#content ul.annuaireAbcedaire {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.annuaireAbcedaire li,
+#content ul.annuaireAbcedaire li {
+    display: inline;
+    margin: 0;
+    margin-right: 0.5em;
+}
+
+.annuaireAbcedaire .selected,
+#content ul.annuaireAbcedaire .selected {
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+#annuaire div.AnnuaireItem {
+    margin-bottom:10px;
+    min-height:100px;
+    padding:10px;
+    box-shadow:2px 2px 10px #ccc;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+#annuaire div.AnnuaireItem.even {
+    background:#F3F1E7;
+}
+#annuaire-contact ul{
+    list-style-position:outside;
+    padding:10px;
+    margin-bottom:5px;
+    margin-left:0;
+    box-shadow:2px 2px 10px #ccc;
+    border:solid 1px #ccc;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+}
+#annuaire-contact ul li{
+    list-style:none;
+}
+.portrait img { 
+    float:right; 
+    clear:both;
+}
+#annuaire-contact .portrait img{
+    margin:10px;
+}
+#annuaire .portrait img{
+    margin-top:-1.5em;
+}
+ul#contact-info li{
+list-style-image:url(fleche.gif);
+}
+/* </dtml-with> */

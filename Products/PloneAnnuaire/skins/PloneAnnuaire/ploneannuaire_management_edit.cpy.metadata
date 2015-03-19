@@ -1,0 +1,9 @@
+[default]
+title = Manage annuaire
+
+[validators]
+validators = 
+
+[actions]
+action.success = redirect_to:string:ploneannuaire_management_form
+action.failure = redirect_to:string:ploneannuaire_management_form

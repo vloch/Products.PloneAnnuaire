@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<export-steps>
+ <export-step id="ploneannuaire" version="20120917-01"
+              handler="Products.PloneAnnuaire.exportimport.tool.exportAnnuaireTool"
+              title="Annuaire tool">
+   Export Annuaire tool settings
+ </export-step>
+</export-steps>

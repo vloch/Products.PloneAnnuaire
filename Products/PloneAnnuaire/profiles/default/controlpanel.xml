@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel">
+    <configlet
+        title="Annuaire"
+        action_id="ploneannuaire_prefs"
+        appId="PloneAnnuaire"
+        category="Products"
+        condition_expr=""
+        url_expr="string:$portal_url/ploneannuaire_management_form"
+        icon_expr="string:$portal_url/ploneannuaire_icon.gif"
+        visible="True"
+    >
+  <permission>Manage portal</permission>
+ </configlet>
+</object>

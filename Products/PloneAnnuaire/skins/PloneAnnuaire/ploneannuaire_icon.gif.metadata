@@ -1,0 +1,6 @@
+[default]
+title=Annuaire
+cache=HTTPCache
+[default]
+title=
+cache=HTTPCache

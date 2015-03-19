@@ -1,0 +1,39 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="Products.PloneAnnuaire">
+
+  <include package="plone.app.contentmenu" />
+
+ 
+    <include package="plone.browserlayer" />
+    -->
+    <!-- Example of browser component with IProductsPloneannuaireLayer layer attribute -->
+    <!-- 
+    <browser:page
+        name="my-view"
+        for="*"
+        permission="zope.Public"
+        template="my-view.pt"
+        layer="..interfaces.IProductsPloneannuaireLayer"
+        />
+    -->
+    <browser:page
+     name="annuaire_main_page"
+     for="Products.PloneAnnuaire.interfaces.IPloneAnnuaire"
+     class=".pages.AnnuaireMainPage"
+     permission="zope2.View"
+     />
+     
+     <!--browser:page
+     name="annuaire_main_page"
+     for="Products.PloneAnnuaire.interfaces.IPloneAnnuaire"
+     class=".pages.AnnuaireMainPage"
+     permission="zope2.View"
+     /-->
+     
+     
+     
+
+
+</configure>

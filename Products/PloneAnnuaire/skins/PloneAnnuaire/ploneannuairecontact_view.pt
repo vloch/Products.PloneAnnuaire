@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="ploneannuaire">
+
+  <body>
+    <metal:main fill-slot="main">
+      <tal:main-macro metal:define-macro="main"
+                      tal:define="kssClassesView context/@@kss_field_decorator_view;
+                                  getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                                  text here/getDefinition;
+                                  website here/Website;
+                                  portrait here/Portrait;
+                                  portraitNormal python:str(portrait).replace('portrait', 'portrait_mini');
+                                  floor here/Floor;
+                                  themes here/getThemes">
+        <div id="annuaire-contact">
+          <div tal:replace="structure provider:plone.abovecontenttitle" />
+          <h1 class="documentFirstHeading">
+            <metal:field use-macro="python:here.widget('title', mode='view')">
+              Title
+            </metal:field>
+          </h1>
+
+          <div tal:replace="structure provider:plone.belowcontenttitle" />
+          <div tal:replace="structure provider:plone.abovecontentbody" />
+
+          <p tal:condition="python: False and not text and is_editable"
+             i18n:domain="plone"
+             i18n:translate="no_body_text"
+             class="discreet">
+            This item does not have any body text, click the edit tab to change it.
+          </p>
+    
+<span class="portrait"> <img src="" tal:attributes="src string:${context/absolute_url}/portrait_mini" tal:condition="here/Portrait"/><img src="" tal:attributes="src string:avatar.jpg" tal:condition="not:here/Portrait"/>
+</span>
+ <!--metal:field use-macro="python:here.widget('portrait', mode='view')" /-->
+          <ul>
+              <li><strong><span i18n:translate="">Grade/Status</span></strong> : <metal:field use-macro="python:here.widget('grade', mode='view')" /></li>
+              <li><strong><span i18n:translate="">Present status</span></strong> : <metal:field use-macro="python:here.widget('institution', mode='view')" /></li>
+              <li tal:condition="here/Building"><strong><span i18n:translate="">Building</span></strong> : <metal:field use-macro="python:here.widget('building', mode='view')" /></li>
+              <li tal:condition="here/Floor"><strong><span i18n:translate="">Year</span></strong> : <span tal:content="python:str(floor)">Floor</span></li>
+              <li tal:condition="here/Office"><strong><span i18n:translate="">Office</span></strong> : <metal:field use-macro="python:here.widget('office', mode='view')" /></li>
+              <li><strong><span i18n:translate="">Phone</span></strong> : <metal:field use-macro="python:here.widget('phone', mode='view')" /></li>
+              <li tal:condition="here/Fax"><strong><span i18n:translate="">Fax</span></strong> : <metal:field use-macro="python:here.widget('fax', mode='view')" /></li>
+              <li><strong>E-mail</strong> : <metal:field use-macro="python:here.widget('email', mode='view')" /></li>
+              <li tal:condition="python:website!='' and website !='http://'">
+                <strong>URL</strong> : 
+                <a href="" tal:condition="python:website.find('http://')!=-1" tal:attributes="href website" target="_blank"><metal:field use-macro="python:here.widget('website', mode='view')" /></a>
+                <a href="" tal:condition="python:website.find('http://')==-1" tal:attributes="href string:${context/portal_url}/${website}" class="internal-link" tal:content="string:${context/portal_url}/${website}"></a>
+              </li>
+              <li tal:condition="here/Team"><strong><span i18n:translate="">Team</span></strong> : <metal:field use-macro="python:here.widget('team', mode='view')" /></li>
+          </ul>
+          <tal:themes tal:condition="themes">
+            
+            <ul>
+              <h3 i18n:translate="">Research topic(s)</h3>
+              <li tal:repeat="variant themes" tal:content="variant" />
+            </ul>
+          </tal:themes>
+        <ul tal:condition="here/getDefinition">
+            <li>
+                <metal:field use-macro="python:here.widget('definition', mode='view')">
+                    Body text
+                </metal:field>
+            </li>
+        </ul>
+          
+
+          <!--div metal:use-macro="here/document_relateditems/macros/relatedItems">
+            show related items if they exist
+          </div-->
+
+          <div tal:replace="structure provider:plone.belowcontentbody" />
+        </div>
+      </tal:main-macro>
+    </metal:main>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<object name="portal_annuaire" meta_type="PloneAnnuaireTool">
+ <property name="title">PloneAnnuaireTool</property>
+ <property name="highlight_content" type="boolean">True</property>
+ <property name="use_general_annuaires" type="boolean">False</property>
+ <property name="general_annuaire_uids" select_variable="getAnnuaireUIDs"
+    type="multiple selection"/>
+ <property name="allowed_portal_types"
+    select_variable="getAvailablePortalTypes" type="multiple selection">
+  <element value="Document"/>
+  <element value="Event"/>
+  <element value="News Item"/>
+ </property>
+ <property name="description_length" type="int">0</property>
+ <property name="description_ellipsis" type="string">...</property>
+ <property name="not_highlighted_tags" type="lines">
+  <element value="a"/>
+  <element value="h1"/>
+  <element value="input"/>
+  <element value="textarea"/>
+ </property>
+ <property name="available_annuaire_metatypes" type="lines">
+  <element value="PloneAnnuaire"/>
+ </property>
+ <property name="annuaire_metatypes"
+    select_variable="getAvailableAnnuaireMetaTypes" type="multiple selection">
+  <element value="PloneAnnuaire"/>
+ </property>
+</object>

@@ -1,0 +1,313 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# Vutheany LOCH <vutheany.loch@ens-lyon.fr>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-09-18 06:59+0000\n"
+"PO-Revision-Date: 2012-09-18 09:27 +ZONE\n"
+"Last-Translator: Vutheany LOCH <vutheany.loch@ens-lyon.fr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: ploneannuaire\n"
+
+#: ../skins/PloneAnnuaire/ploneannuairecontact_view.pt:44
+msgid "Building"
+msgstr ""
+
+#: ../skins/PloneAnnuaire/ploneannuaire_view.pt:118
+msgid "E-mail"
+msgstr ""
+
+#: ../skins/PloneAnnuaire/ploneannuairecontact_view.pt:48
+msgid "Fax"
+msgstr ""
+
+#: ../skins/PloneAnnuaire/ploneannuairecontact_view.pt:45
+msgid "Year"
+msgstr ""
+
+#: ../skins/PloneAnnuaire/ploneannuairecontact_view.pt:42
+msgid "Grade/Status"
+msgstr ""
+
+#: ../skins/PloneAnnuaire/ploneannuairecontact_view.pt:43
+msgid "Present status"
+msgstr ""
+
+#: ../skins/PloneAnnuaire/ploneannuairecontact_view.pt:46
+msgid "Office"
+msgstr ""
+
+#: ../skins/PloneAnnuaire/ploneannuaire_view.pt:117
+#: ../skins/PloneAnnuaire/ploneannuairecontact_view.pt:47
+msgid "Phone"
+msgstr ""
+
+#: ../profiles/default/types/PloneAnnuaire.xml
+msgid "Plone Annuaire"
+msgstr "Annuaire"
+
+#: ../profiles/default/types/PloneAnnuaireContact.xml
+msgid "Plone Annuaire Contact"
+msgstr "Contact"
+
+#: ../profiles/default/types/PloneAnnuaire.xml
+msgid "PloneAnnuaire"
+msgstr "Annuaire"
+
+#: ../profiles/default/types/PloneAnnuaireContact.xml
+msgid "PloneAnnuaireContact"
+msgstr "Contact"
+
+#: ../skins/PloneAnnuaire/ploneannuairecontact_view.pt:56
+msgid "Research topic(s)"
+msgstr ""
+
+#: ../skins/PloneAnnuaire/ploneannuaire_view.pt:63
+msgid "Search"
+msgstr ""
+
+#: ../skins/PloneAnnuaire/ploneannuaire_view.pt:116
+msgid "Status"
+msgstr ""
+
+#: ../skins/PloneAnnuaire/ploneannuaire_view.pt:119
+#: ../skins/PloneAnnuaire/ploneannuairecontact_view.pt:51
+msgid "Team"
+msgstr ""
+
+#. Default: "PloneAnnuaire Management"
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:24
+msgid "heading_ploneannuaire_management"
+msgstr ""
+
+#. Default: "Select portal types allowed to be highlighted, if highlight feature is enabled. No selection results in the same thing of selecting all portal types."
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:145
+msgid "help_allowed_portal_types"
+msgstr ""
+
+#. Default: "Enter more information about you here."
+#: ../content/ploneannuairecontact.py:226
+msgid "help_annuaire_autres_text"
+msgstr ""
+
+#: ../content/ploneannuairecontact.py:111
+msgid "help_annuaire_building"
+msgstr ""
+
+#. Default: "Enter your name."
+#: ../content/ploneannuairecontact.py:57
+msgid "help_annuaire_contact"
+msgstr ""
+
+#. Default: "Your address E-mail."
+#: ../content/ploneannuairecontact.py:174
+msgid "help_annuaire_email"
+msgstr ""
+
+#. Default: "Your fax."
+#: ../content/ploneannuairecontact.py:161
+msgid "help_annuaire_fax"
+msgstr ""
+
+#: ../content/ploneannuairecontact.py:122
+msgid "help_annuaire_floor"
+msgstr ""
+
+#. Default: "Ex : Ingénieur de Recherche Hors Classe - CNRS."
+#: ../content/ploneannuairecontact.py:87
+msgid "help_annuaire_grade"
+msgstr ""
+
+#. Default: "Ex : ENS de Lyon."
+#: ../content/ploneannuairecontact.py:99
+msgid "help_annuaire_institution"
+msgstr ""
+
+#. Default: "Your Office Number. Ex : LE D 55."
+#: ../content/ploneannuairecontact.py:135
+msgid "help_annuaire_office"
+msgstr ""
+
+#. Default: "Your Phone Number, one per line."
+#: ../content/ploneannuairecontact.py:148
+msgid "help_annuaire_phone"
+msgstr ""
+
+#. Default: "Upload your picture."
+#: ../content/ploneannuairecontact.py:74
+msgid "help_annuaire_portrait"
+msgstr ""
+
+#. Default: "Your research team."
+#: ../content/ploneannuairecontact.py:199
+msgid "help_annuaire_team"
+msgstr ""
+
+#. Default: "Enter the resarch themes, one per line."
+#: ../content/ploneannuairecontact.py:211
+msgid "help_annuaire_themes"
+msgstr ""
+
+#. Default: "URL."
+#: ../content/ploneannuairecontact.py:187
+msgid "help_annuaire_website"
+msgstr ""
+
+#. Default: "Enter ellipsis. It is used in popup when contact of term is too long."
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:99
+msgid "help_description_ellipsis"
+msgstr ""
+
+#. Default: "Enter maximum description length of term."
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:77
+msgid "help_description_length"
+msgstr ""
+
+#. Default: "Select annuaires used to check related terms of content. By default all annuaires will be used."
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:199
+msgid "help_general_annuaire_uids"
+msgstr ""
+
+#. Default: "Check it to highlight related terms in content. You can choose which types to highlight."
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:60
+msgid "help_highlight_content"
+msgstr ""
+
+#. Default: "Enter one tag name per line. Tags specified below will not be highlighted. A tag may be in the form 'tag' to match any tag, 'tag#select' to match tag with id 'select', or 'tag.someclass' to match all tags with CSS class 'someclass'."
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:121
+msgid "help_not_highlighted_tags"
+msgstr ""
+
+#. Default: "When checked, all annuaires will be used to highlight terms globally for all of the site's content.<br /> By unchecking this option, only the first annuaire found while traversing upwards from the current location will be used."
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:182
+msgid "help_use_general_annuaires"
+msgstr ""
+
+#. Default: "Allowed portal types"
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:140
+msgid "label_allowed_portal_types"
+msgstr ""
+
+#. Default: "More informations"
+#: ../content/ploneannuairecontact.py:225
+msgid "label_annuaire_autres_text"
+msgstr ""
+
+#. Default: "Building"
+#: ../content/ploneannuairecontact.py:110
+msgid "label_annuaire_building"
+msgstr ""
+
+#. Default: "Contact Name"
+#: ../content/ploneannuairecontact.py:56
+msgid "label_annuaire_contact"
+msgstr ""
+
+#. Default: "E-mail"
+#: ../content/ploneannuairecontact.py:173
+msgid "label_annuaire_email"
+msgstr ""
+
+#. Default: "Fax"
+#: ../content/ploneannuairecontact.py:160
+msgid "label_annuaire_fax"
+msgstr ""
+
+#. Default: "Floor"
+#: ../content/ploneannuairecontact.py:121
+msgid "label_annuaire_floor"
+msgstr ""
+
+#. Default: "Statut"
+#: ../content/ploneannuairecontact.py:86
+msgid "label_annuaire_grade"
+msgstr ""
+
+#. Default: "Institution"
+#: ../content/ploneannuairecontact.py:98
+msgid "label_annuaire_institution"
+msgstr ""
+
+#. Default: "Office"
+#: ../content/ploneannuairecontact.py:134
+msgid "label_annuaire_office"
+msgstr ""
+
+#. Default: "Phone"
+#: ../content/ploneannuairecontact.py:147
+msgid "label_annuaire_phone"
+msgstr ""
+
+#. Default: "Portrait"
+#: ../content/ploneannuairecontact.py:73
+msgid "label_annuaire_portrait"
+msgstr ""
+
+#. Default: "Team"
+#: ../content/ploneannuairecontact.py:198
+msgid "label_annuaire_team"
+msgstr ""
+
+#. Default: "Research Themes"
+#: ../content/ploneannuairecontact.py:210
+msgid "label_annuaire_themes"
+msgstr ""
+
+#. Default: "Website"
+#: ../content/ploneannuairecontact.py:186
+msgid "label_annuaire_website"
+msgstr ""
+
+#. Default: "Description ellipsis"
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:94
+msgid "label_description_ellipsis"
+msgstr ""
+
+#. Default: "Description length"
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:72
+msgid "label_description_length"
+msgstr ""
+
+#. Default: "General annuaires"
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:194
+msgid "label_general_annuaire_uids"
+msgstr ""
+
+#. Default: "Highlight content ?"
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:55
+msgid "label_highlight_content"
+msgstr ""
+
+#. Default: "Not highlighted tags"
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:116
+msgid "label_not_highlighted_tags"
+msgstr ""
+
+#. Default: "Search"
+#: ../skins/PloneAnnuaire/ploneannuaire_view.pt:58
+msgid "label_text_search"
+msgstr ""
+
+#. Default: "Use annuaires globally for all content?"
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:178
+msgid "label_use_general_annuaires"
+msgstr ""
+
+#. Default: "PloneAnnuaire Management"
+#: ../skins/PloneAnnuaire/ploneannuaire_management_form.cpt:41
+msgid "legend_ploneannuaire_management"
+msgstr ""
+
+#. Default: "Tool properties saved"
+#: ../skins/PloneAnnuaire/ploneannuaire_management_edit.cpy:31
+msgid "tool_properties_saved"
+msgstr ""
+

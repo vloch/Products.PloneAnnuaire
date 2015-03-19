@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="ploneannuaire">
+
+  <!-- configure your content components here -->
+  
+  <class class=".ploneannuairecontact.PloneAnnuaireContact">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.ploneannuairecontact.IPloneAnnuaireContact"
+        />
+  </class>
+  <class class=".ploneannuaire.PloneAnnuaire">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.ploneannuaire.IPloneAnnuaire"
+        />
+  </class>
+
+</configure>
